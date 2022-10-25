@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+.DisplayContainer {
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  width: 70%;
+  border-color: #FDF0E7;
+  height: 35vh;
+  margin-bottom: 20px;
+}
+
+.ListContainer {
+  overflow-y: scroll;
+  float: left;
+  width: 28%;
+  border-right: 2px solid;
+  border-right-color: #FDF0E7;
+  height: 99vh;
+}
+
+.noteContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 20%;
+  border-color: white;
+}
+
+.noteContainer:hover {
+  border: 1px solid;
+  cursor: default;
+  border-color: whitesmoke;
+  transition-delay: 0.1s;
+
+}
+
+.ListContainerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+
+.buttonAddNote {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #ff0505;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: auto;
+  height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.buttonAddNote:hover,
+.buttonAddNote:focus {
+  background-color: #ff0505;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.buttonAddNote:hover {
+  transform: translateY(-1px);
+}
+
